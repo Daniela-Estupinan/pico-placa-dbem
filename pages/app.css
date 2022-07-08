@@ -1,0 +1,18 @@
+:root {
+  --green: #75daad;
+  --red: #d63447;
+  --lila: #6f51f5;
+  --purple: #510859;
+  --white: #ffffff;
+}
+
+
+body {
+  align-items: center;
+  background-color: rgba(65, 43, 59, 0.6);
+  display: flex;
+  font-family: "Georgia", serif;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}

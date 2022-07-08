@@ -1,0 +1,30 @@
+.inputLabel {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.inputField {
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 12px 16px;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.inputField:focus {
+  box-shadow: 0 0 0 3px var(--outline);
+  outline: none;
+}
+
+.inputWrapper {
+  display: grid;
+  grid-row-gap: 2px;
+  grid-template-rows: auto 1fr;
+}
+
+.inputWrapper:first-child {
+  grid-column: 1 / 3;
+}
