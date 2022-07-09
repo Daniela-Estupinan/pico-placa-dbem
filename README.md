@@ -19,3 +19,4 @@ Información adicional a considerar
 ## Author
 
   - **Daniela Estupiñan**
+  - daniela.estupinan@udla.edu.ec
