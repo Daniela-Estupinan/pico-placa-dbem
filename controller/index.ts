@@ -12,27 +12,27 @@ class Validator {
   private restrictedHours: string[][];
 
   constructor() {
-    this.weekdays = [[], [1, 2], [3, 4], [5, 6], [7, 8], [9, 0], []];
+    this.weekdays = [[], [1, 2], [3, 4], [5, 6], [7, 8], [9, 0], []];//sunday and saturday there is no restriccion
     this.restrictedHours = [
-      ["07:00", "09:30"],
-      ["16:00", "19:30"],
+      ["07:00", "09:30"],//morning hours
+      ["16:00", "19:30"],//evening hours
     ];
   }
 
   private isRestrictedHour(time: string): boolean {
     const [
       [morningStart, morningEnd],
-      [nightStart, nightEnd],
+      [eveningStart, eveningEnd],
     ] = this.restrictedHours;
 
     return (
       (time >= morningStart && time <= morningEnd) ||
-      (time >= nightStart && time <= nightEnd)
+      (time >= eveningStart && time <= eveningEnd)
     );
   }
 
   private getDayNumber(date: string): number {
-    return getDay(parseISO(date));
+    return getDay(parseISO(date));//obtain the number of the day that the user input
   }
 
   private getLastDigitIndex(plate: string): number {

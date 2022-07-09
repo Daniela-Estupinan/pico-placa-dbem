@@ -8,7 +8,7 @@ import SubmitButton from "../components/submit-button";
 
 function App() {
   const [submitted, setSubmited] = React.useState(false);
-  const [hasPeakAndPlate, setHasPeakAndPlate] = React.useState(false);
+  const [hasRestriction, setHasRestriction] = React.useState(false);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -19,8 +19,8 @@ function App() {
       new FormData(event.target as HTMLFormElement)
     );
 
-    setHasPeakAndPlate(
-      validator.hasPeakAndPlate((formData as unknown) as FormFields)
+    setHasRestriction(
+      validator.hasRestriction((formData as unknown) as FormFields)
     );
   }
 
@@ -46,7 +46,7 @@ function App() {
       />
       <SubmitButton label="Consultar" />
       {submitted &&
-        (hasPeakAndPlate ? (
+        (hasRestriction ? (
           <Alert label="No puede circular" type="restricted" />
         ) : (
           <Alert label="Si puede circular" type="allowed" />
