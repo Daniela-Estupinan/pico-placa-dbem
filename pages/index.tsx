@@ -41,7 +41,7 @@ function App() {
       <Input
         id="time"
         pattern="([0-1]?[0-9]|2[0-3]):[0-5][0-9]"
-        label="Hora (HH:MM)"
+        label="Hora (HH:MM) 24h"
         placeholder=" "
       />
       <SubmitButton label="Consultar" />
