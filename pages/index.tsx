@@ -28,15 +28,15 @@ function App() {
     <Form onSubmit={handleSubmit}>
       <Input
         id="plate"
-        pattern="\D{3}-\d{3,4}"
-        label="Placa (XXX-999, XXX-9999)"
+        pattern="\D{3,4}-\d{3,4}"
+        label="Placa (XXX-999, XXXX-9999)"
         placeholder=" "
       />
       <Input
         id="date"
         pattern="\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])"
         label="Día (AAAA-MM-DD)"
-        placeholder="2020-06-30"
+        placeholder="2022-11-14"
       />
       <Input
         id="time"
