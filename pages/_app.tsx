@@ -7,11 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <title>Revisar Pico y Placa</title>
+        <title>Control Pico y Placa</title>
       </Head>
       <Component {...pageProps} />
     </>
