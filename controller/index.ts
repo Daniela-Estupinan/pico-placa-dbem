@@ -43,7 +43,7 @@ class Validator {
     });
   }
 
-  public hasPeakAndPlate(formFields: FormFields): boolean {
+  public hasRestriction(formFields: FormFields): boolean {
     const dayNumber = this.getDayNumber(formFields.date);
     const lastDigitIndex = this.getLastDigitIndex(formFields.plate);
 
