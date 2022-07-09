@@ -1,12 +1,12 @@
 ## Pico y placa
 [Deployado en Netlify](https://dazzling-mermaid-e8031c.netlify.app/)
 
-## Deployment
-# To install properties
+# Deployment
+### To install properties
 - npm install 
-# Dev run
+### Dev run
 - npm run dev
-# Build run
+### Build run
 - npm run build
 
 
