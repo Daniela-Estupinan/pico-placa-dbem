@@ -27,6 +27,12 @@ function App() {
   return (
     <Form onSubmit={handleSubmit}>
       <Input
+        id="model"
+        pattern=""
+        label="Modelo del Vehiculo"
+        placeholder="Chevrolet"
+      />
+      <Input
         id="plate"
         pattern="\D{3,4}-\d{3,4}"
         label="Placa (XXX-999, XXXX-9999)"
